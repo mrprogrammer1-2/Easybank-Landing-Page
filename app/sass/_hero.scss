@@ -8,7 +8,7 @@
     padding-bottom: 3rem;
     &__image {
         position: relative;
-        background-image: url(/images/bg-intro-mobile.svg);
+        background-image: url('../../images/bg-intro-mobile.svg');
         min-height: 25rem;
         background-repeat: no-repeat;
         background-size: 130%;
@@ -18,8 +18,8 @@
         }
         img {
             position: absolute;
-            top: -7rem;
-            width: 100%;
+            top: -2rem;
+            width: 90%;
             max-width: 30rem;
             left: 50%;
             transform: translateX(-50%);
@@ -40,7 +40,7 @@
 
         @include breakpoints-up(large) {
             order: 2;
-            background-image: url('/images/bg-intro-desktop.svg');
+            background-image: url('../../images//bg-intro-desktop.svg');
             background-position: left center;           
             flex: 3;
             top: 0;

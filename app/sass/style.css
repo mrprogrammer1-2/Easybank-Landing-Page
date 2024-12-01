@@ -262,7 +262,7 @@ img {
 }
 .hero__image {
   position: relative;
-  background-image: url('../../images/bg-intro-mobile.svg');
+  background-image: url("../../images/bg-intro-mobile.svg");
   min-height: 25rem;
   background-repeat: no-repeat;
   background-size: 130%;
@@ -275,8 +275,8 @@ img {
 }
 .hero__image img {
   position: absolute;
-  top: -7rem;
-  width: 100%;
+  top: -2rem;
+  width: 90%;
   max-width: 30rem;
   left: 50%;
   transform: translateX(-50%);
@@ -292,7 +292,7 @@ img {
   .hero__image img {
     width: 100%;
     max-width: none;
-    right: -8rem;
+    right: -6rem;
     transform: initial;
     left: auto;
     top: -6rem;
