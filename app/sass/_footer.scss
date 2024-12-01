@@ -1,0 +1,56 @@
+.footer {
+    background-color: $Dark-Blue;
+    text-align: center;
+    padding-block: 2rem;
+    .container {
+        @include breakpoints-up(medium) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include breakpoints-up(large) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    a {
+        color: $White;
+    }
+    &__logo {
+        margin-bottom: 1rem;
+        path {
+            fill: $White;
+        }
+
+    }
+
+    &__social {
+        margin-block: 1rem;
+        a {
+            font-size: 1.5rem;
+            padding: .25rem;
+            transition: 0.3s;
+            &:not(:last-child) {
+                margin-right: .5rem;
+            }
+            &:hover {
+                color: $Lime-Green;
+            }
+        }
+    }
+    &__col:nth-child(2),
+    &__col:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        font-size: 1rem;
+        a {
+            transition: 0.3s;
+            &:hover {
+                color: $Lime-Green;
+            } 
+        }
+    }
+
+    button {
+        margin-block: 1rem;
+    }
+}

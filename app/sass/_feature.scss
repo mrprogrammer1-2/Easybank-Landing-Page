@@ -1,0 +1,40 @@
+.feature {
+    text-align: center;
+    background-color: $Light-Grayish-Blue;
+    @include breakpoints-up(large) {
+        text-align: left;
+    }
+
+    img {
+        width: 5.625rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        padding-block: 1.5rem .25rem;
+    }
+
+    p {
+        @include breakpoints-up(large) {
+            max-width: 46.875rem;
+        }
+    }
+
+    &__flex {
+        padding-top: 3rem;
+        @include breakpoints-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .item {
+        margin-bottom: 2rem;
+        padding: .9rem;
+        @include breakpoints-up(medium) {
+            flex: 1 0 50%;
+        }
+        @include breakpoints-up(large) {
+            flex: 1;
+        }
+    }
+}

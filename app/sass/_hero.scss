@@ -1,0 +1,67 @@
+.hero {
+    @include breakpoints-up(large) {
+        display: flex;
+        align-items: center;
+        padding-left: 6.5rem;
+    }
+
+    padding-bottom: 3rem;
+    &__image {
+        position: relative;
+        background-image: url(/images/bg-intro-mobile.svg);
+        min-height: 25rem;
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: center top;
+        @include breakpoints-up(medium) {
+            min-height: 40rem;
+        }
+        img {
+            position: absolute;
+            top: -4.25rem;
+            width: 100%;
+            max-width: 30rem;
+            left: 50%;
+            transform: translateX(-50%);
+            @include breakpoints-up(medium) {
+                width: 78%;
+                max-width: none;
+                top: -12rem;
+            }
+            @include breakpoints-up(large) {
+                width: 100%;
+                max-width: none;
+                right: -6rem;
+                transform: initial;
+                left: auto;
+                top: -6rem;
+            }
+        }
+
+        @include breakpoints-up(large) {
+            order: 2;
+            background-image: url('/images/bg-intro-desktop.svg');
+            background-position: left center;           
+            flex: 3;
+            top: 0;
+            height: 41rem;
+        }
+
+    }
+    &__text {
+        text-align: center;
+        padding-inline: 1.5rem;
+        padding-block: 1.5rem;
+        @include breakpoints-up(large) {
+            order: 1;
+            flex: 2;
+            text-align: left;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 2.25rem;
+        }
+            
+    } 
+}
