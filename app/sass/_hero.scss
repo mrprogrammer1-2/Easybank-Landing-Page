@@ -1,4 +1,5 @@
 .hero {
+    background-color: $Very-Light-Gray;
     @include breakpoints-up(large) {
         display: flex;
         align-items: center;

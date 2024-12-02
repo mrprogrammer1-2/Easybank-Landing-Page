@@ -251,6 +251,7 @@ img {
 }
 
 .hero {
+  background-color: hsl(0, 0%, 98%);
   padding-bottom: 3rem;
 }
 @media (min-width: 64em) {
